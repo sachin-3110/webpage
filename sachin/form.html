@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+
+    <form action="">
+        <h1>Sample Form</h1>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name: </label>
+        <input type="text"  placeholder="Melissa Miso"  id="name"><br>
+        <label for="email">Email: </label>
+        <input type="email" placeholder=" example@example.com"  id="email">
+        <br>
+        <label for="Age">Age: </label>
+        <input type="num"  placeholder="18" id="Age">
+        <br>
+        <label for="Gender">Gender: </label>
+        <select id="Gender" name="gender">
+            <option value="other">Others</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option></select>
+    </fieldset>
+    <fieldset>
+        <legend>Address</legend>
+        <label for="address">Address: </label><br>
+        <textarea  id="address" cols="30" rows="10" placeholder="Enter your address"></textarea><br>
+    <label for="zip">Zip   Code: </label>
+    <input type="text" pattern="[0-9]" {5} id="zip"placeholder="5-digits only">
+    </fieldset>
+
+    <fieldset>
+        <legend>Radio</legend>
+        <input type="radio" id="css" name="lang" required>
+        <label for="css">CSS</label>
+        <input type="radio" id="html" name="lang" required>
+        <label for="html" id>HTML</label>
+        <input type="radio" id="js" name="lang" required>
+        <label for="js" >JavaScript</label>
+    </fieldset>
+    <fieldset>
+        <legend>Interest</legend>
+        <input type="checkbox" id="cb1" required>
+        <label for="cb1">coding</label><br>
+        <input type="checkbox" id="cb2" required>
+        <label for="cb2">Gaming</label><br>
+        <input type="checkbox" id="cb3" required>
+        <label for="cb3">Reading</label>
+    </fieldset>
+    <fieldset>
+        <legend>Upload File</legend>
+        <input type="file" accept="img/*" required>
+
+    </fieldset>
+    <fieldset>
+        <legend>Submit and Reset</legend>
+        <input type="submit">
+        <input type="reset">
+    </fieldset>
+    </form>
+
+    
+</body>
+</html>

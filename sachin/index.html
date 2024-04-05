@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        box-sizing: border-box;
+    }
+            body{
+                display: flex;
+                justify-content: center ;
+                align-items: center;
+                background-color: black;
+                color: white;
+                
+            }
+        .parent{
+            background-image: url("https://i.ytimg.com/vi/NVvHyXU_SBc/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC_PDy-VE7qTe-FW-3yjt4YYs5tfw");
+            border-radius: 20px;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size:cover;
+            margin: 100px;
+            border: 10px solid white;
+        }
+        .music{
+            height: 40%;
+            padding: 10rem;
+            position: relative;
+            
+        }
+        a{
+            position: relative;
+    /* top: 10px; */
+            text-decoration: none;
+            color: antiquewhite;
+            line-height: 7;
+            
+            font-weight: 900;
+            padding: 9px;
+            border-radius: 10px ;
+            border: 5px solid white;
+            font-size: 2rem;
+            text-shadow: 0 0 3px #e69292, 0 0 5px #00ff73;
+        }
+
+        h2{
+            position: relative;
+            top: 0;
+            text-transform: uppercase;
+            letter-spacing: 15px;
+            font-size: 3em;
+            color: pink;
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+            
+
+        }
+        a:hover{
+            transition: 500ms;
+            background-color: white;
+            color:  black;
+            font-weight: 900;
+            /* border: none; */
+        }
+
+        a::after{
+            content:" ";
+            height: 10px;
+            color: white;
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="music">
+            <h2>Music Player</h2>
+            <a href="https://youtu.be/uCMYzolEbO0?si=yNYAl7lVdIFKa0vN" id="music_button">Click to Play</a>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
